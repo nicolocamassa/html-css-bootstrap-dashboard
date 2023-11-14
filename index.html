@@ -1,201 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Bootstrap Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bootstrap Dashboard</title>
 </head>
+
 <body>
-    <header class="temp-style-red">
+  <header>
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div class="col-sm-1 p-0">
+          <img src="./img/mobile-logo.png" alt="logo" class="img-fluid">
+        </div>
+        <div class="col-10 d-flex align-items-center">
+          <input class="form-control form-control-lg" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+          <datalist id="datalistOptions">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+          </datalist>
+        </div>
+        <div class="col-1 d-flex align-items-center">
+          <div class="dropdown">
+            <button class="btn btn-secondary bg-transparent border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bell text-warning fs-5"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="d-flex">
+    <div class="main_sidebar"></div>
+    <div class="main_section">
+      <!-- INFORMAZIONI PRINCIPALI -->
+      <section>
         <div class="container-fluid">
-            <div class="row justify-content-between">
-                <div class="col temp-height-70"></div>
-                <div class="col temp-height-70"></div>
-                <div class="col temp-height-70"></div>
+          <div class="row text-white p-2 pt-3">
+            <div class="col-lg-4 col-sm-12 order-sm-1 order-lg-0 mt-sm-4">
+              <div class="title_dashboard">
+                <span class="fs-2 align-middle">Boolean</span>
+                <span class="badge rounded-pill text-bg-secondary align-middle mx-2">Piano blaze</span>
+              </div>
+              <div class="path_dashboard">
+                <span class="badge rounded-pill text-bg-secondary align-middle mx-2">3 app</span>
+                <i class="fa-solid fa-angles-right align-middle"></i>
+                <span class="badge rounded-pill text-bg-secondary align-middle mx-2 ">+</span>
+              </div>
             </div>
+            <div class="col-lg-4 col-sm-12 order-sm-1 order-lg-0 my-sm-4 ">
+              <div>Studenti online negli ultimi 30 minuti</div>
+              <div class="fs-2 mt-1">125</div>
+            </div>
+            <div class="col-lg-4 col-sm-12  d-flex align-items-center ">
+              <span>Nuovo Studente</span>
+              <i class="fas fa-plus p-3 mx-3 border border-white rounded-3"></i>
+            </div>
+          </div>
         </div>
-    </header>
+      </section>
 
-    <main class="d-flex">
-        <div class="main_sidebar"></div>
-        <div class="main_section">
-            <!-- INFORMAZIONI PRINCIPALI -->
-            <section>
-                <div class="container-fluid">
-                    <div class="row text-white p-2 pt-3">
-                        <div class="col-lg-4 col-sm-12 order-sm-1 order-lg-0 mt-sm-4">
-                            <div class="title_dashboard">
-                                <span class="fs-2 align-middle">Boolean</span>
-                                <span class="badge rounded-pill text-bg-secondary align-middle mx-2">Piano blaze</span>
-                            </div>
-                            <div class="path_dashboard">
-                                <span class="badge rounded-pill text-bg-secondary align-middle mx-2">3 app</span>
-                                <i class="fa-solid fa-angles-right align-middle"></i>
-                                <span class="badge rounded-pill text-bg-secondary align-middle mx-2 ">+</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12 order-sm-1 order-lg-0 my-sm-4">
-                            <div>Studenti online negli ultimi 30 minuti</div>
-                            <div class="fs-2 mt-1">125</div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12  d-flex align-items-center justify-center">
-                            <span>Nuovo Studente</span>
-                            <i class="fas fa-plus p-3 mx-3 border border-white rounded-3"></i>
-                        </div>
-                    </div>
+      <!-- GESTIONE -->
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-lg-8 mt-4">
+              <div class="content">
+
+                <!-- !!!!!!!!!!!!!!  C'è un puntino di qualche lista(?)  !!!!!!!!!!!!!! -->
+                <!-- CARD PER TABELLA [GESTIONE] -->
+                <div class="card">
+                  <div class="card-header fs-3">
+                    Prossime classi
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="px-3">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                  </ul>
                 </div>
-            </section>
 
-            <!-- GESTIONE -->
-            <section>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-8 mt-4">
-                            <div class="content">
-
-                                <!-- CARD PER TABELLA [GESTIONE] -->
-                                <div class="card">
-                                    <div class="card-header fs-3">
-                                      Prossime classi
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                      <li class="px-3">
-                                        <table class="table">
-                                            <thead>
-                                              <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">First</th>
-                                                <th scope="col">Last</th>
-                                                <th scope="col">Handle</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">3</th>
-                                                <td colspan="2">Larry the Bird</td>
-                                                <td>@twitter</td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                      </li>
-                                    </ul>
-                                  </div>
-
-                                  <!-- CARD PER FAQ [GESTIONE] -->
-                                  <div class="card mt-3">
-                                    <div class="card-header fs-3">
-                                      Featured
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                      <li>
-                                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                  Accordion Item #1
-                                                </button>
-                                              </h2>
-                                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                              </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                  Accordion Item #2
-                                                </button>
-                                              </h2>
-                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                              </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                  Accordion Item #3
-                                                </button>
-                                              </h2>
-                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                            </div>
+                <!-- CARD PER FAQ [GESTIONE] -->
+                <div class="card mt-3">
+                  <div class="card-header fs-3">
+                    Featured
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li>
+                      <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseOne" aria-expanded="false"
+                              aria-controls="flush-collapseOne">
+                              Accordion Item #1
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                              demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                              body.</div>
+                          </div>
                         </div>
-
-                        <div class="col-sm-12 col-lg-4 mt-4">
-                            <div class="content">
-                                <!-- CARD PER TO-DO [GESTIONE/2] -->
-                                <div class="card">
-                                    <div class="card-header fs-3">
-                                      TODO
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">An item</li>
-                                      <li class="list-group-item">A second item</li>
-                                      <li class="list-group-item">A third item</li>
-                                    </ul>
-                                </div>
-
-                                <div class="card p-2 mt-3">
-                                    <div class="card">
-                                        <img src="./img/stats.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body p-0">
-                                            <h5 class="card-title p-2 mb-0">Utenti attivi</h5>
-                                            <table class="table">
-                                                <thead>
-                                                  <tr class="d-flex flex-column">
-                                                    <td class="pb-3">Lista degli utenti attivi in piattaforma nell'ultimo mese</td>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                  <tr>
-                                                    <td colspan="12">Mark</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td colspan="12">Jacob</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td colspan="12">Larry the Bird</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td colspan="12"><a href="#">Visualizza</a></td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                              aria-controls="flush-collapseTwo">
+                              Accordion Item #2
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                              demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                              body. Let's imagine this being filled with some actual content.</div>
+                          </div>
                         </div>
-                    </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseThree" aria-expanded="false"
+                              aria-controls="flush-collapseThree">
+                              Accordion Item #3
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                              demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                              body. Nothing more exciting happening here in terms of content, but just filling up the
+                              space to make it look, at least at first glance, a bit more representative of how this
+                              would look in a real-world application.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-4 mt-4">
+              <div class="content">
+                <!-- CARD PER TO-DO [GESTIONE/2] -->
+                <div class="card">
+                  <div class="card-header fs-3">
+                    TODO
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                </div>
+
+                <div class="card p-2 mt-3">
+                  <div class="card">
+                    <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h5 class="card-title p-2 mb-0">Utenti attivi</h5>
+                      <table class="table">
+                        <thead>
+                          <tr class="d-flex flex-column">
+                            <td class="pb-3">Lista degli utenti attivi in piattaforma nell'ultimo mese</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="12">Mark</td>
+                          </tr>
+                          <tr>
+                            <td colspan="12">Jacob</td>
+                          </tr>
+                          <tr>
+                            <td colspan="12">Larry the Bird</td>
+                          </tr>
+                          <tr>
+                            <td colspan="12"><a href="#">Visualizza</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
+      </section>
+    </div>
+  </main>
 
-    <footer>
+  <footer>
 
-    </footer>
-    <!-- SCRIPT BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </footer>
+  <!-- SCRIPT BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

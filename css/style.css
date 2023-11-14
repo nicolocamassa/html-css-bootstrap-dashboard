@@ -46,20 +46,26 @@ body{
 
 /* HEADER */
 header{
+    background-color: #ffffff;
     width: 100%;
-    height: 90px;
     position: fixed;
     z-index: 1;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    height: 90px;
+}
+
+.col_logo{
+    width: 50px;
 }
 
 /* MAIN */
 /* Sidebar [MAIN] */
 .main_sidebar{
     position: fixed;
-    height: 100vh;
+    height: calc(100vh - 90px);
+    margin-top: 90px;
     width: 90px;
     background-color: #12283f;
 }
