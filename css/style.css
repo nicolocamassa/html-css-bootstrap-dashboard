@@ -16,6 +16,12 @@ body{
     border: 3px dashed black;
 }
 
+.temp-style-yellow{
+    background-color: yellow;
+    border: 3px dashed black;
+    height: 50px;
+}
+
 .temp-style-green{
     background-color: greenyellow;
     border: 3px dashed black;
@@ -25,6 +31,18 @@ body{
     height: 50px;
     background-color: greenyellow;
     border: 3px dashed black;
+}
+
+.temp-height-200{
+    height: 700px;
+    background-color: red;
+    border: 3px dashed black;
+}
+
+.main_section section:nth-child(1){
+    background-color: red;
+    height: 300px;
+    width: 100%;
 }
 
 /* HEADER */
@@ -38,14 +56,20 @@ header{
     padding: 20px;
 }
 
+/* MAIN */
+/* Sidebar [MAIN] */
 .main_sidebar{
+    position: fixed;
     height: 100vh;
     width: 90px;
     background-color: #12283f;
 }
 
+/* Sezione principale [MAIN] */
 .main_section{
-    width: calc(100% - 90px);
-    height: 100vh;
+    width: calc(100% - 90px); /* Rimuove la larghezza della sidebar */
+    height: calc(100vh - 90px); /* Rimuove l'altezza dell'header */
+    margin-top: 90px;
+    margin-left: 90px;
     background-color: rgb(145, 255, 0);
 }
