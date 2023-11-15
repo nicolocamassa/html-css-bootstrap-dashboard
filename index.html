@@ -48,14 +48,23 @@
     <!-- SIDEBAR -->
     <div class="main_sidebar d-flex flex-column justify-content-between py-4 text-white">
       <div class="col d-flex flex-column align-items-center">
-        <ul class="list-unstyled fs-3">
-          <li><i class="fas fa-house"></i></li>
-          <li class="my-1"><i class="fa-solid fa-chart-simple"></i></li>
-          <li class="fs-5"><i class="fa-solid fa-signal"></i></li>
+        <ul class="list-unstyled fs-5 sidebar_menu_hover">
+          <li class="justify-content-between">
+            <i class="fas fa-house"></i>
+            <span class="d-none d-lg-inline">Home</span>
+          </li>
+          <li class="my-1">
+            <i class="fa-solid fa-chart-simple me-2"></i>
+            <span class="d-none d-lg-inline">Stats</span>
+          </li>
+          <li class="fs-5">
+            <i class="fa-solid fa-signal me-2"></i>
+            <span class="d-none d-lg-inline">Signals</span>
+          </li>
         </ul>
       </div>
       <div class="col d-flex align-items-end justify-content-center">
-        <i class="fa-solid fa-gear fs-3"></i>
+        <i class="fa-solid fa-gear fs-4 me-2"></i><span class="d-none d-lg-block">Admin</span>
       </div>
     </div>
 
@@ -70,13 +79,19 @@
               <div class="content my-4 my-md-0">
                 <div class="title_dashboard">
                   <span class="fs-1 fw-medium align-middle">Boolean</span>
-                  <span class="badge rounded-pill text-bg-dark bg-opacity-25 align-middle mx-2 fs-6">Piano blaze</span>
+                  <span class="badge rounded-pill text-bg-dark bg-opacity-25 align-middle mx-2 fs-7">Piano blaze</span>
                 </div>
                 <div class="path_dashboard">
-                  <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-6">3 app</span>
+                  <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7">3 app</span>
                   <i class="fa-solid fa-angles-right align-middle mx-1"></i>
-                  <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-6">+</span>
+                  <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-lg-none">+</span>
+                  
+                    <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-none d-lg-inline">Boolean app</span>
+                    <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-none d-lg-inline">Boolean web app</span>
+                    <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-none d-lg-inline">Boolean blog app</span>
+                 
                 </div>
+                  
               </div>
             </div>
 
@@ -92,7 +107,7 @@
             <div class="col-md-4 col-sm-12">
               <div class="content py-md-3">
                 <span>Nuovo Studente</span>
-                <button class="btn btn-primary d-inline border bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                <button class="btn d-inline border btn_student" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
 
               </div>
             </div>
@@ -116,7 +131,7 @@
                   <ul class="list-group list-group-flush list-unstyled">
                     <li class="px-3">
 
-                      <table class="table">
+                      <table class="table overflow-y-auto">
                         <thead>
                           <tr>
                             <td>Nome</td>

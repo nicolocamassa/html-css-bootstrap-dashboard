@@ -80,6 +80,16 @@ header{
     margin-left: 60px;
 }
 
+.btn_student{
+    color: white;
+}
+
+.btn_student:hover{
+    background-color: rgb(146, 146, 146);
+    color: black;
+}
+
+
 .fa-code{
     background-color: #f26551;
     padding: 10px 8px;
@@ -100,6 +110,15 @@ td:nth-child(3),
 td:nth-child(4), 
 td:nth-child(5){
     text-align:center;
+}
+
+tr:hover td{
+    background-color: rgb(194, 194, 194);
+}
+
+.sidebar_menu_hover li:hover{
+    background-color: rgb(166, 166, 166);
+    cursor: pointer;
 }
 
 
