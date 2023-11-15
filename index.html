@@ -22,7 +22,7 @@
           <img src="./img/logo.svg" alt="logo" class="d-none d-lg-block img-fluid">
         </div>
         <div class="col d-flex align-items-center">
-          <input class="form-control form-control-lg fs-6 search_bar px-5 bg-light" list="datalistOptions" id="exampleDataList" placeholder="Prova a cercare: Lezioni di Laravel">
+          <input class="form-control form-control-lg fs-6 search_bar px-5 bg-light" id="datalistOptions" placeholder="Prova a cercare: Lezioni di Laravel">
           <span class="fa-solid fa-magnifying-glass"></span>
         </div>
         <div class="col-1 d-flex align-items-center  p-0">
@@ -61,7 +61,7 @@
 
     <div class="main_section">
       <!-- INFORMAZIONI PRINCIPALI -->
-      <section>
+      <div class="main_info_section">
         <div class="container-fluid">
           <div class="row text-white p-2 pt-3">
 
@@ -98,7 +98,7 @@
 
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- GESTIONE -->
       <section>
@@ -118,66 +118,66 @@
                       <table class="table">
                         <thead>
                           <tr>
-                            <td scope="col">Nome</td>
-                            <td scope="col" class="d-none d-lg-table-cell">Data inizio</td>
-                            <td scope="col" class="d-none d-lg-table-cell">ROI</td>
-                            <td scope="col">Stato</td>
-                            <td scope="col">Azioni</td>
+                            <td>Nome</td>
+                            <td class="d-none d-lg-table-cell">Data inizio</td>
+                            <td class="d-none d-lg-table-cell">ROI</td>
+                            <td>Stato</td>
+                            <td>Azioni</td>
                           </tr>
                         </thead>
                         <tbody class="align-middle"> 
                           <tr>
                             <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
-                            <td class="d-none d-lg-table-cell">15 Feb 2021</th>
+                            <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-primary ">Primary</span></td>
                             <td>Icone</td>
                           </tr>
                           <tr>
                             <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
-                            <td class="d-none d-lg-table-cell">15 Feb 2021</th>
+                            <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-primary ">Primary</span></td>
                             <td>Icone</td>
                           </tr>
                           <tr>
                             <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
-                            <td class="d-none d-lg-table-cell">15 Feb 2021</th>
+                            <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-primary ">Primary</span></td>
                             <td>Icone</td>
                           </tr>
                           <tr>
                             <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
-                            <td class="d-none d-lg-table-cell">15 Feb 2021</th>
+                            <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-primary ">Primary</span></td>
                             <td>Icone</td>
                           </tr>
                           <tr>
                             <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
-                            <td class="d-none d-lg-table-cell">15 Feb 2021</th>
+                            <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-primary ">Primary</span></td>
                             <td>Icone</td>
                           </tr>
                           <tr>
                             <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
-                            <td class="d-none d-lg-table-cell">15 Feb 2021</th>
+                            <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-primary ">Primary</span></td>
                             <td>Icone</td>
                           </tr>
                           <tr>
                             <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
-                            <td class="d-none d-lg-table-cell">15 Feb 2021</th>
+                            <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-primary ">Primary</span></td>
                             <td>Icone</td>
                           </tr>
                           <tr>
                             <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
-                            <td class="d-none d-lg-table-cell">15 Feb 2021</th>
+                            <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-primary ">Primary</span></td>
                             <td>Icone</td>
@@ -287,16 +287,16 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td colspan="12">Mark</td>
+                            <td>Mark</td>
                           </tr>
                           <tr>
-                            <td colspan="12">Jacob</td>
+                            <td>Jacob</td>
                           </tr>
                           <tr>
-                            <td colspan="12">Larry the Bird</td>
+                            <td>Larry the Bird</td>
                           </tr>
                           <tr>
-                            <td colspan="12"><a href="#">Visualizza</a></td>
+                            <td><a href="#">Visualizza</a></td>
                           </tr>
                         </tbody>
                       </table>

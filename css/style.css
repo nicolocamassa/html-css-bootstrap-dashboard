@@ -40,7 +40,7 @@ body{
     border: 3px dashed black;
 }
 
-.main_section section:nth-child(1){
+.main_info_section{
     background-color: #1b72e8;
     width: 100%;
 }
