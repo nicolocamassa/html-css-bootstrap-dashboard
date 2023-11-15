@@ -14,25 +14,39 @@
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header>
     <div class="container-fluid">
       <div class="row justify-content-between">
+
+        <!-- Colonna per il logo [HEADER] -->
         <div class="col-1 p-0 d-flex justify-content-center" >
           <img src="./img/mobile-logo.png" alt="logo" class="d-lg-none d-block" style="width: 50px;">
           <img src="./img/logo.svg" alt="logo" class="d-none d-lg-block img-fluid">
         </div>
+
+        <!-- Colonna per la barra di ricerca [HEADER] -->
         <div class="col d-flex align-items-center">
           <input class="form-control form-control-lg fs-6 search_bar px-5 bg-light" id="datalistOptions" placeholder="Prova a cercare: Lezioni di Laravel">
           <span class="fa-solid fa-magnifying-glass"></span>
         </div>
+
+        <!-- Colonna per il sottomenù [HEADER] -->
         <div class="col-1 d-flex align-items-center  p-0">
+
+          <!-- Icone sottomenù [HEADER] -->
           <i class="fa-solid fa-list d-none d-lg-block me-2"></i>
           <i class="fa-solid fa-circle-question d-none d-lg-block mx-2"></i>
           <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block mx-2"></i>
+
+          <!-- Pulsante con lista dropdown (campanella) [HEADER] -->
           <div class="dropdown">
             <button class="btn btn-secondary bg-transparent border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-bell text-warning fs-5"></i>
             </button>
+
+            <!-- Finestra del dropdown (campanella) [HEADER] -->
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Profilo</a></li>
               <li><a class="dropdown-item" href="#">Fatturazione</a></li>
@@ -48,21 +62,31 @@
     <!-- SIDEBAR -->
     <div class="main_sidebar d-flex flex-column justify-content-between py-4 text-white">
       <div class="col d-flex flex-column align-items-center">
+
+        <!-- Finestre presenti nella sidebar [SIDEBAR] -->
         <ul class="list-unstyled fs-5 sidebar_menu_hover">
+
+          <!-- Finestra Home [SIDEBAR] -->
           <li class="justify-content-between">
             <i class="fas fa-house"></i>
             <span class="d-none d-lg-inline">Home</span>
           </li>
+
+          <!-- Finestra Stats [SIDEBAR] -->
           <li class="my-1">
             <i class="fa-solid fa-chart-simple me-2"></i>
             <span class="d-none d-lg-inline">Stats</span>
           </li>
+
+          <!-- Finestra Signals [SIDEBAR] -->
           <li class="fs-5">
             <i class="fa-solid fa-signal me-2"></i>
             <span class="d-none d-lg-inline">Signals</span>
           </li>
         </ul>
       </div>
+
+      <!-- Finestra per impostazioni admin [SIDEBAR] -->
       <div class="col d-flex align-items-end justify-content-center">
         <i class="fa-solid fa-gear fs-4 me-2"></i><span class="d-none d-lg-block">Admin</span>
       </div>
@@ -74,28 +98,27 @@
         <div class="container-fluid">
           <div class="row text-white p-2 pt-3">
 
-            <!-- Percorso della dashboard -->
+            <!-- Percorso della dashboard [INFO]-->
             <div class="col-md-4 col-sm-12 order-1 order-md-0">
               <div class="content my-4 my-md-0">
                 <div class="title_dashboard">
                   <span class="fs-1 fw-medium align-middle">Boolean</span>
                   <span class="badge rounded-pill text-bg-dark bg-opacity-25 align-middle mx-2 fs-7">Piano blaze</span>
                 </div>
+
+                <!-- Percorso della dashboard (icone) [INFO]-->
                 <div class="path_dashboard">
                   <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7">3 app</span>
                   <i class="fa-solid fa-angles-right align-middle mx-1"></i>
                   <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-lg-none">+</span>
-                  
-                    <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-none d-lg-inline">Boolean app</span>
-                    <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-none d-lg-inline">Boolean web app</span>
-                    <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-none d-lg-inline">Boolean blog app</span>
-                 
+                  <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-none d-lg-inline">Boolean app</span>
+                  <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-none d-lg-inline">Boolean web app</span>
+                  <span class="badge rounded-pill text-bg-dark align-middle bg-opacity-25 fs-7 d-none d-lg-inline">Boolean blog app</span>
                 </div>
-                  
               </div>
             </div>
 
-            <!-- Studenti online -->
+            <!-- Studenti online [INFO] -->
             <div class="col-md-4 col-sm-12 order-1 order-md-0">
               <div class="content py-md-3">
                 <div class="fw-medium">Studenti online negli ultimi 30 minuti</div>
@@ -103,12 +126,13 @@
               </div>
             </div>
 
-            <!-- Pulsante per l'aggiunta di un nuovo studente -->
+            <!-- Pulsante per l'aggiunta di un nuovo studente [INFO]-->
             <div class="col-md-4 col-sm-12">
               <div class="content py-md-3">
                 <span>Nuovo Studente</span>
-                <button class="btn d-inline border btn_student" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
 
+                <!-- Pulsante collegato a offcanvas [INFO]-->
+                <button class="btn d-inline border btn_student" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
               </div>
             </div>
 
@@ -123,15 +147,20 @@
             <div class="col-sm-12 col-lg-8 mt-4">
               <div class="content">
 
-                <!-- CARD PER TABELLA [GESTIONE] -->
+                <!-- Card per la tabella [GESTIONE/TABELLA] -->
                 <div class="card">
+
+                  <!-- Titolo tabella [GESTIONE/TABELLA] -->
                   <div class="card-header fs-3">
                     Prossime classi
                   </div>
+
+                  <!-- Tabella [GESTIONE/TABELLA] -->
                   <ul class="list-group list-group-flush list-unstyled">
                     <li class="px-3">
-
                       <table class="table overflow-y-auto">
+
+                        <!-- Suddivisione colonne [GESTIONE/TABELLA] -->
                         <thead>
                           <tr>
                             <td>Nome</td>
@@ -141,7 +170,10 @@
                               <td>Azioni</td>
                           </tr>
                         </thead>
+
+                        <!-- Body della tabella [GESTIONE/TABELLA] -->
                         <tbody class="align-middle"> 
+
                           <tr>
                             <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
                               <td class="d-none d-lg-table-cell">15 Feb 2021</td>
@@ -152,125 +184,168 @@
                                 <div class="fas fa-trash p-2 border border-2  border-secondary rounded text-body-secondary"></div>
                               </td>
                           </tr>
+
                           <tr>
-                            <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
+                            <td><i class="fas fa-code me-2 text-white"></i>Classe 76</td>
                             <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-success ">Done</span></td>
+
+                            <!-- Strumenti gestionali della tabella [GESTIONE/TABELLA] -->
                             <td>
                               <i class="fas fa-pencil p-2 border border-2  border-secondary rounded text-body-secondary"></i>
                               <div class="fas fa-trash p-2 border border-2  border-secondary rounded text-body-secondary"></div>
                             </td>
                           </tr>
+
+                         
                           <tr>
-                            <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
+                            <td><i class="fas fa-code me-2 text-white"></i>Classe 77</td>
                             <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-warning text-white">Process</span></td>
+
+                            <!-- Strumenti gestionali della tabella [GESTIONE/TABELLA] -->
                             <td>
                               <i class="fas fa-pencil p-2 border border-2  border-secondary rounded text-body-secondary"></i>
                               <div class="fas fa-trash p-2 border border-2  border-secondary rounded text-body-secondary"></div>
                             </td>
                           </tr>
+
                           <tr>
-                            <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
+                            <td><i class="fas fa-code me-2 text-white"></i>Classe 78</td>
                             <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-success ">Done</span></td>
+
+                            <!-- Strumenti gestionali della tabella [GESTIONE/TABELLA] -->
                             <td>
                               <i class="fas fa-pencil p-2 border border-2  border-secondary rounded text-body-secondary"></i>
                               <div class="fas fa-trash p-2 border border-2  border-secondary rounded text-body-secondary"></div>
                             </td>
                           </tr>
+
                           <tr>
-                            <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
+                            <td><i class="fas fa-code me-2 text-white"></i>Classe 79</td>
                             <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-danger ">Failed</span></td>
+
+                            <!-- Strumenti gestionali della tabella [GESTIONE/TABELLA] -->
                             <td>
                               <i class="fas fa-pencil p-2 border border-2  border-secondary rounded text-body-secondary"></i>
                               <div class="fas fa-trash p-2 border border-2  border-secondary rounded text-body-secondary"></div>
                             </td>
                           </tr>
+
                           <tr>
-                            <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
+                            <td><i class="fas fa-code me-2 text-white"></i>Classe 80</td>
                             <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-success ">Done</span></td>
+
+                            <!-- Strumenti gestionali della tabella [GESTIONE/TABELLA] -->
                             <td>
                               <i class="fas fa-pencil p-2 border border-2  border-secondary rounded text-body-secondary"></i>
                               <div class="fas fa-trash p-2 border border-2  border-secondary rounded text-body-secondary"></div>
                             </td>
                           </tr>
+
                           <tr>
-                            <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
+                            <td><i class="fas fa-code me-2 text-white"></i>Classe 81</td>
                             <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-danger ">Failed</span></td>
+
+                            <!-- Strumenti gestionali della tabella [GESTIONE/TABELLA] -->
                             <td>
                               <i class="fas fa-pencil p-2 border border-2  border-secondary rounded text-body-secondary"></i>
                               <div class="fas fa-trash p-2 border border-2  border-secondary rounded text-body-secondary"></div>
                             </td>
                           </tr>
+
                           <tr>
-                            <td><i class="fas fa-code me-2 text-white"></i>Classe 75</td>
+                            <td><i class="fas fa-code me-2 text-white"></i>Classe 92</td>
                             <td class="d-none d-lg-table-cell">15 Feb 2021</td>
                             <td class="d-none d-lg-table-cell">20%</td>
                             <td><span class="badge text-bg-success ">Done</span></td>
+
+                            <!-- Strumenti gestionali della tabella [GESTIONE/TABELLA] -->
                             <td>
                               <i class="fas fa-pencil p-2 border border-2  border-secondary rounded text-body-secondary"></i>
                               <div class="fas fa-trash p-2 border border-2  border-secondary rounded text-body-secondary"></div>
                             </td>
                           </tr>
+
                         </tbody>
                       </table>
                     </li>
                   </ul>
                 </div>
 
-                <!-- CARD PER FAQ [GESTIONE] -->
+                <!-- CARD PER FAQ [GESTIONE/FAQ] -->
                 <div class="card mt-3">
+
+                  <!-- TITOLO FAQ [GESTIONE/FAQ] -->
                   <div class="card-header fs-3">
                     Featured
                   </div>
+
                   <ul class="list-group list-group-flush list-unstyled">
                     <li>
                       <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <!-- Accordion 1 [GESTIONE/FAQ] -->
                         <div class="accordion-item">
                           <h2 class="accordion-header">
+
+                            <!-- Domanda 1 [GESTIONE/FAQ] -->
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                               data-bs-target="#flush-collapseOne" aria-expanded="false"
                               aria-controls="flush-collapseOne">
                               Come aggiungere un nuovo studente?
                             </button>
                           </h2>
+
+                          <!-- Risposta 1 [GESTIONE/FAQ] -->
                           <div id="flush-collapseOne" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
                           </div>
                         </div>
                         
+                        <!-- Accordion 2 [GESTIONE/FAQ] -->
                         <div class="accordion-item">
                           <h2 class="accordion-header">
+
+                            <!-- Domanda 2 [GESTIONE/FAQ] -->
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                               data-bs-target="#flush-collapseTwo" aria-expanded="false"
                               aria-controls="flush-collapseTwo">
                               Come posso accedere alle informazioni del mio account?
                             </button>
                           </h2>
+
+                          <!-- Risposta 2 [GESTIONE/FAQ] -->
                           <div id="flush-collapseTwo" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">Clicca sull'icona della campanella.</div>
                           </div>
                         </div>
+
+                        <!-- Accordion 3 [GESTIONE/FAQ] -->
                         <div class="accordion-item">
                           <h2 class="accordion-header">
+
+                            <!-- Domanda 3 [GESTIONE/FAQ] -->
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                               data-bs-target="#flush-collapseThree" aria-expanded="false"
                               aria-controls="flush-collapseThree">
                               Posso usare questa dashboard da mobile?
                             </button>
                           </h2>
+
+                          <!-- Risposta 3 [GESTIONE/FAQ] -->
                           <div id="flush-collapseThree" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur quos exercitationem temporibus? Necessitatibus ab commodi repellat, nobis.</div>
@@ -285,11 +360,16 @@
 
             <div class="col-sm-12 col-lg-4 mt-4">
               <div class="content">
-                <!-- CARD PER TO-DO [GESTIONE/2] -->
+
+                <!-- CARD PER TO-DO [GESTIONE/TODO] -->
                 <div class="card">
+
+                  <!-- Titolo TO-DO [GESTIONE/TODO] -->
                   <div class="card-header fs-3">
                     TODO
                   </div>
+
+                  <!-- Lista con checkbox [GESTIONE/TODO] -->
                   <ul class="list-group p-3">
                     <li class="list-group-item">
                       <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
@@ -306,30 +386,46 @@
                   </ul>
                 </div>
 
+                <!-- CARD UTENTI [GESTIONE/UTENTI] -->
                 <div class="card p-2 my-3">
                   <div class="card">
+
+                    <!-- Immagine statistiche [GESTIONE/UTENTI] -->
                     <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                     <div class="card-body p-0">
+
+                      <!-- Titolo card [GESTIONE/UTENTI] -->
                       <h5 class="card-title p-2 mb-0">Utenti attivi</h5>
+
+                      <!-- Tabella utenti attivi [GESTIONE/UTENTI] -->
                       <table class="table">
+
+                        <!-- Head tabella [GESTIONE/UTENTI] -->
                         <thead>
                           <tr class="d-flex flex-column">
                             <td class="pb-3">Lista degli utenti attivi in piattaforma nell'ultimo mese</td>
                           </tr>
                         </thead>
+
+                        <!-- Body tabella [GESTIONE/UTENTI] -->
                         <tbody>
+
                           <tr>
                             <td>Gennaio: 1200</td>
                           </tr>
+
                           <tr>
                             <td>Febbraio: 800</td>
                           </tr>
+
                           <tr>
                             <td>Marzo: 1500</td>
                           </tr>
+
                           <tr>
                             <td><a href="#">Visualizza report approfondito</a></td>
                           </tr>
+
                         </tbody>
                       </table>
                     </div>
@@ -343,15 +439,23 @@
     </div>
   </main>
 
+  <!-- OFFCANVAS -->
   <div class="offcanvas offcanvas-end canvas_responsive"  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    
+    <!-- Header [OFFCANVAS] -->
     <div class="offcanvas-header">
+
+      <!-- Titolo [OFFCANVAS] -->
       <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
+
+    <!-- Body [OFFCANVAS] -->
     <div class="offcanvas-body">
       <div class="container">
         <div class="row">
           
+            <!-- Inserimento nome [OFFCANVAS] -->
             <div class="col-12 col-md-6">
               <div class="mb-3">
                 <label for="name" class="form-label">Nome</label>
@@ -359,6 +463,7 @@
               </div>
             </div>
 
+            <!-- Inserimento cognome [OFFCANVAS] -->
             <div class="col-12 col-md-6">
               <div class="mb-3">
                 <label for="cognome" class="form-label">Cognome</label>
@@ -366,6 +471,7 @@
               </div>
             </div>
 
+            <!-- Inserimento e-mail [OFFCANVAS] -->
             <div class="col-12 col-md-6">
               <label for="cognome" class="form-label">Email</label>
               <div class="input-group mb-3">
@@ -374,6 +480,7 @@
               </div>
             </div>
 
+            <!-- Inserimento password [OFFCANVAS] -->
             <div class="col-12 col-md-6">
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -381,6 +488,7 @@
               </div>
             </div>
 
+            <!-- Inserimento indirizzo [OFFCANVAS] -->
             <div class="col-12">
               <div class="mb-3">
                 <label for="name" class="form-label">Indirizzo</label>
@@ -388,6 +496,7 @@
               </div>
             </div>
 
+            <!-- Inserimento città [OFFCANVAS] -->
             <div class="col-12 col-md-6">
               <div class="mb-3">
                 <label for="name" class="form-label">Città</label>
@@ -395,6 +504,7 @@
               </div>
             </div>
 
+            <!-- Inserimento stato [OFFCANVAS] -->
             <div class="col-12 col-md-4">
               <div class="mb-3">
                 <label for="disabledSelect" class="form-label">Stato</label>
@@ -404,6 +514,7 @@
               </div>
             </div>
 
+            <!-- Inserimento CAP [OFFCANVAS] -->
             <div class="col-12 col-md-2">
               <div class="mb-3">
                 <label for="name" class="form-label">CAP</label>
@@ -411,6 +522,7 @@
               </div>
             </div>
 
+            <!-- Inserimento foto [OFFCANVAS] -->
             <div class="col-12">
               <div class="mb-3">
                 <label for="foto" class="form-label">Foto</label>
@@ -418,6 +530,7 @@
               </div>
             </div>
 
+            <!-- Checkbox per la conferma delle azioni [OFFCANVAS] -->
             <div class="mb-3">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
@@ -427,15 +540,16 @@
               </div>
             </div>
 
+            <!-- Bottoni collegati al form [OFFCANVAS] -->
             <div>
               <button type="submit" class="btn btn-primary">Salva</button>
               <button type="reset" class="btn btn-warning">Svuota</button>
             </div>
-
         </div>
       </div>
     </div>
   </div>
+  
   <!-- SCRIPT BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
