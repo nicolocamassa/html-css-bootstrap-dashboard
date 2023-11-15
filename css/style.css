@@ -78,3 +78,9 @@ header{
     margin-top: 90px;
     margin-left: 90px;
 }
+
+.fa-code{
+    background-color: #f26551;
+    padding: 10px 8px;
+    border-radius: 100px;
+}
