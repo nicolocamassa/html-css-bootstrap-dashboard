@@ -84,3 +84,12 @@ header{
     padding: 10px 8px;
     border-radius: 100px;
 }
+
+.search_bar{
+    position: relative;
+}
+    .fa-magnifying-glass {
+        font-size: 20px;
+        margin-left: 10px;
+        position: absolute;
+    }

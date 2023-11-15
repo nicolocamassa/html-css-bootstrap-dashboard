@@ -18,19 +18,17 @@
     <div class="container-fluid">
       <div class="row justify-content-between">
         <div class="col-1 p-0 d-flex justify-content-center" >
-          <img src="./img/mobile-logo.png" alt="logo" style="width: 50px;">
+          <img src="./img/mobile-logo.png" alt="logo" class="d-lg-none d-block" style="width: 50px;">
+          <img src="./img/logo.svg" alt="logo" class="d-none d-lg-block img-fluid">
         </div>
         <div class="col d-flex align-items-center">
-          <input class="form-control form-control-lg" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-          <datalist id="datalistOptions">
-            <option value="San Francisco">
-            <option value="New York">
-            <option value="Seattle">
-            <option value="Los Angeles">
-            <option value="Chicago">
-          </datalist>
+          <input class="form-control form-control-lg fs-6 search_bar px-5 bg-light" list="datalistOptions" id="exampleDataList" placeholder="Prova a cercare: Lezioni di Laravel">
+          <span class="fa-solid fa-magnifying-glass"></span>
         </div>
         <div class="col-1 d-flex align-items-center  p-0">
+          <i class="fa-solid fa-list d-none d-lg-block me-2"></i>
+          <i class="fa-solid fa-circle-question d-none d-lg-block mx-2"></i>
+          <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block mx-2"></i>
           <div class="dropdown">
             <button class="btn btn-secondary bg-transparent border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-bell text-warning fs-5"></i>
@@ -68,8 +66,8 @@
           <div class="row text-white p-2 pt-3">
 
             <!-- Percorso della dashboard -->
-            <div class="col-lg-4 col-sm-12 order-1 order-lg-0">
-              <div class="content my-4 my-lg-0">
+            <div class="col-md-4 col-sm-12 order-1 order-md-0">
+              <div class="content my-4 my-md-0">
                 <div class="title_dashboard">
                   <span class="fs-1 fw-medium align-middle">Boolean</span>
                   <span class="badge rounded-pill text-bg-dark bg-opacity-25 align-middle mx-2 fs-6">Piano blaze</span>
@@ -83,16 +81,16 @@
             </div>
 
             <!-- Studenti online -->
-            <div class="col-lg-4 col-sm-12 order-1 order-lg-0">
-              <div class="content py-lg-3">
+            <div class="col-md-4 col-sm-12 order-1 order-md-0">
+              <div class="content py-md-3">
                 <div class="fw-medium">Studenti online negli ultimi 30 minuti</div>
                 <div class="fs-2 mt-1">125</div>
               </div>
             </div>
 
             <!-- Pulsante per l'aggiunta di un nuovo studente -->
-            <div class="col-lg-4 col-sm-12">
-              <div class="content py-lg-3">
+            <div class="col-md-4 col-sm-12">
+              <div class="content py-md-3">
                 <span>Nuovo Studente</span>
                 <i class="fas fa-plus p-3 mx-3 border border-white rounded-3"></i>
               </div>
@@ -276,7 +274,7 @@
                   </ul>
                 </div>
 
-                <div class="card p-2 mt-3">
+                <div class="card p-2 my-3">
                   <div class="card">
                     <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                     <div class="card-body p-0">
