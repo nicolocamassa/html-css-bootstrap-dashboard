@@ -50,7 +50,7 @@ header{
     background-color: #ffffff;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -67,16 +67,17 @@ header{
     position: fixed;
     height: calc(100vh - 90px);
     margin-top: 90px;
-    width: 90px;
+    width: 60px;
     background-color: #12283f;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 /* Sezione principale [MAIN] */
 .main_section{
-    width: calc(100% - 90px); /* Rimuove la larghezza della sidebar */
+    width: calc(100% - 60px); /* Rimuove la larghezza della sidebar */
     height: calc(100vh - 90px); /* Rimuove l'altezza dell'header */
     margin-top: 90px;
-    margin-left: 90px;
+    margin-left: 60px;
 }
 
 .fa-code{
@@ -93,3 +94,30 @@ header{
         margin-left: 10px;
         position: absolute;
     }
+
+td:nth-child(2), 
+td:nth-child(3), 
+td:nth-child(4), 
+td:nth-child(5){
+    text-align:center;
+}
+
+
+@media screen and (max-width: 992px) {
+    .canvas_responsive{
+        min-width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main_sidebar{
+        width: 140px;
+    }
+
+    .main_section{
+        width: calc(100% - 140px); /* Rimuove la larghezza della sidebar */
+        height: calc(100vh - 90px); /* Rimuove l'altezza dell'header */
+        margin-top: 90px;
+        margin-left: 140px;
+    }
+}
