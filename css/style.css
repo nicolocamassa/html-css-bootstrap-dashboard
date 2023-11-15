@@ -10,41 +10,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* MOMENTANEI */
-
-.temp-style-red{
-    background-color: red;
-    border: 3px dashed black;
-}
-
-.temp-style-yellow{
-    background-color: yellow;
-    border: 3px dashed black;
-    height: 50px;
-}
-
-.temp-style-green{
-    background-color: greenyellow;
-    border: 3px dashed black;
-}
-
-.temp-height-70{
-    height: 50px;
-    background-color: greenyellow;
-    border: 3px dashed black;
-}
-
-.temp-height-200{
-    height: 700px;
-    background-color: red;
-    border: 3px dashed black;
-}
-
-.main_info_section{
-    background-color: #1b72e8;
-    width: 100%;
-}
-
 /* HEADER */
 header{
     background-color: #ffffff;
@@ -61,7 +26,35 @@ header{
     width: 50px;
 }
 
+/* Barra di ricerca [HEADER] */
+.search_bar{
+    position: relative;
+}
+
+/* Posizionamento lente nella barra di ricerca [HEADER] */
+.fa-magnifying-glass {
+    font-size: 20px;
+    margin-left: 10px;
+    position: absolute;
+}
+
 /* MAIN */
+/* Barra delle informazioni e aggiunta studente [MAIN] */
+.main_info_section{
+    background-color: #1b72e8;
+    width: 100%;
+}
+
+/* Bottone per l'aggiunta dello studente [MAIN] */
+.btn_student{
+    color: white;
+}
+
+.btn_student:hover{
+    background-color: rgb(146, 146, 146);
+    color: black;
+}
+
 /* Sidebar [MAIN] */
 .main_sidebar{
     position: fixed;
@@ -80,31 +73,14 @@ header{
     margin-left: 60px;
 }
 
-.btn_student{
-    color: white;
-}
-
-.btn_student:hover{
-    background-color: rgb(146, 146, 146);
-    color: black;
-}
-
-
+/* Icona classe [GESTIONE/TABELLA] */
 .fa-code{
     background-color: #f26551;
     padding: 10px 8px;
     border-radius: 100px;
 }
 
-.search_bar{
-    position: relative;
-}
-    .fa-magnifying-glass {
-        font-size: 20px;
-        margin-left: 10px;
-        position: absolute;
-    }
-
+/* Centratura dal secondo elemento in poi nella tabella [GESTIONE/TABELLA] */
 td:nth-child(2), 
 td:nth-child(3), 
 td:nth-child(4), 
@@ -112,10 +88,12 @@ td:nth-child(5){
     text-align:center;
 }
 
+/* Hover per le linee della tabella [GESTIONE/TABELLA] */
 tr:hover td{
     background-color: rgb(194, 194, 194);
 }
 
+/* Hover per il menù della sidebar [GESTIONE/TABELLA] */
 .sidebar_menu_hover li:hover{
     background-color: rgb(166, 166, 166);
     cursor: pointer;
@@ -123,20 +101,21 @@ tr:hover td{
 
 
 @media screen and (max-width: 992px) {
+    /* Dimensione del canvas a tutto schermo nella modalità mobile [OFFCANVAS] */
     .canvas_responsive{
         min-width: 100%;
     }
 }
 
 @media screen and (min-width: 992px) {
+    /* Ridimensionamento sidebar nella modalità desktop [SIDEBAR] */
     .main_sidebar{
         width: 140px;
     }
 
+    /* Riadattamento del main nella modalità desktop [MAIN] */
     .main_section{
         width: calc(100% - 140px); /* Rimuove la larghezza della sidebar */
-        height: calc(100vh - 90px); /* Rimuove l'altezza dell'header */
-        margin-top: 90px;
         margin-left: 140px;
     }
 }
